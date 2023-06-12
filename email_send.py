@@ -23,7 +23,10 @@ class DailyDigestEmail:
         msg = EmailMessage()
         msg['Subject'] = f"Hello There - {datetime.date.today().strftime('%d %b %Y')}"
         msg['From'] = self.sender['email']
-        msg['To'] = ', '. join(self.recipient)
+        msg['To'] = self.recipient
+
+        os.remove('D:/Learning/Projects/Message via Emai/sender.txt')
+        os.remove('D:/Learning/Projects/Message via Emai/recipient.txt')
 
         msg_body = self.format_message()
         msg.add_alternative(msg_body, subtype='html')
@@ -64,9 +67,6 @@ def main():
 
         print('Sending E-mail...')
         email.send_email()
-
-        os.remove('D:/Learning/Projects/Message via Emai/sender.txt')
-        os.remove('D:/Learning/Projects/Message via Emai/recipient.txt')
 
 if __name__ == '__main__':
     GUI.main()
