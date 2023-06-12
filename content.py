@@ -23,4 +23,4 @@ def get_random_link():
     return random.choice(links)
 
 if __name__ == '__main__':
-    pass
+    print(get_random_quote())
