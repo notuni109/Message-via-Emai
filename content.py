@@ -1,6 +1,5 @@
 import random
 import csv
-import os
 
 def get_random_quote():
     quotes_file = open('quotes.csv', 'r')

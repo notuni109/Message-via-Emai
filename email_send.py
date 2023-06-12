@@ -1,4 +1,5 @@
 import ast
+import os
 import content
 import datetime
 import smtplib
@@ -63,6 +64,9 @@ def main():
 
         print('Sending E-mail...')
         email.send_email()
+
+        os.remove('D:/Learning/Projects/Message via Emai/sender.txt')
+        os.remove('D:/Learning/Projects/Message via Emai/recipient.txt')
 
 if __name__ == '__main__':
     GUI.main()
