@@ -9,4 +9,3 @@ How to use:
 3. Enter your recipient's gmail address
 4. Press Send to send the email / Press Clear to clear the entered fields
 5. An additional html file is created afterwards in case you want to see the file you just sent
-
