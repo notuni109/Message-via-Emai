@@ -6,7 +6,7 @@ The message contains:
 - A random image of who you are literally 
 
 How to use:
-1. Run email_send.py file
+1. Run email_send.py file , or run application/email_send.exe
 2. Enter your OUTLOOK account's username (gmail address) and password in the GUI
 3. Enter your recipient's gmail address
 4. Press Send to send the email / Press Clear to clear the entered fields
