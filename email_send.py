@@ -25,8 +25,8 @@ class DailyDigestEmail:
         msg['From'] = self.sender['email']
         msg['To'] = self.recipient
 
-        os.remove('D:/Learning/Projects/Message via Emai/sender.txt')
-        os.remove('D:/Learning/Projects/Message via Emai/recipient.txt')
+        os.remove('sender.txt')
+        os.remove('recipient.txt')
 
         msg_body = self.format_message()
         msg.add_alternative(msg_body, subtype='html')
